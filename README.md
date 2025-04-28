@@ -1,1 +1,1 @@
-# Arduino-Controlled-Glove-Robotic-Arm-Assistant
+# Arduino Controlled Glove Robotic Arm Assistant
