@@ -9,3 +9,6 @@ This project integrates a flex‑sensor glove with an Arduino microcontroller to
 - Real‑time motion mapping
 - Modular firmware for easy extension
 - 3D‑printed and CAD‑designed structural parts
+
+## Introduction
+Many assistive robotic systems require complex multi‑limb coordination or pre‑programmed routines. Our project addresses the challenge faced by users who can only operate one arm by enabling real‑time manual control of a robotic arm via a wearable sensor glove. By mapping hand orientation (pitch, roll, yaw) to servo movements, users can intuitively manipulate the arm in six degrees of freedom.
