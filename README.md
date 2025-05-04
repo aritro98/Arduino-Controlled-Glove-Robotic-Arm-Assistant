@@ -15,7 +15,7 @@ Many assistive robotic systems require complex multi‑limb coordination or pre�
 
 ## Project Overview
 Our system consists of two main components:
-* Robotic Glove: A wearable glove embedded with flex sensors and an Arduino microcontroller. It captures finger and hand movements and translates them into control signals.
-* Robotic Arm: A six-degree-of-freedom arm driven by servo motors, also interfaced with an Arduino board. It receives signals from the glove and mirrors the wearer’s gestures.
+* **Robotic Glove**: A wearable glove embedded with flex sensors and an Arduino microcontroller. It captures finger and hand movements and translates them into control signals.
+* **Robotic Arm**: A six-degree-of-freedom arm driven by servo motors, also interfaced with an Arduino board. It receives signals from the glove and mirrors the wearer’s gestures.
 
 This setup achieves real-time mapping of human hand gestures to robotic motion, allowing fine manipulation of the arm with a single wearable device. The design files for the mechanical arm are provided in Fusion 360 format (`.f3d`), and the control logic is implemented in Arduino sketches.
