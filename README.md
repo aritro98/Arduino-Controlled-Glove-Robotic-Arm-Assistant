@@ -23,6 +23,6 @@ This setup achieves real-time mapping of human hand gestures to robotic motion, 
 ## Features
 - **Glove Sensors**: Five flex sensors for individual finger tracking
 - **Arduino Control**: Arduino sketches (`Robotic_Glove.ino`, `Robotic_Arm.ino`)
-- **CAD Designs**: Fusion 360 .f3d files for both glove mount and arm segments
+- **CAD Designs**: Fusion 360 `.f3d` files for both glove mount and arm segments
 - **Power Management**: Efficient servo power distribution
 - **Modular Code**: Separate modules for sensor reading and servo actuation
