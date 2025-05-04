@@ -26,3 +26,33 @@ This setup achieves real-time mapping of human hand gestures to robotic motion, 
 - **CAD Designs**: Fusion 360 `.f3d` files for both glove mount and arm segments
 - **Power Management**: Efficient servo power distribution
 - **Modular Code**: Separate modules for sensor reading and servo actuation
+
+## Workflow
+1. **Sensor Calibration**:
+   * Calibrate flex sensors on the glove to establish bending thresholds (e.g. neutral, half‑bent, fully bent).
+   * Zero the MPU6050 (accelerometer/gyro) so that pitch, roll, and yaw read 0° when the hand is in the reference pose.
+2. **Gesture Acquisition**:
+   * User dons the ESP32‑based glove.
+   * MPU6050 continuously measures orientation (pitch, roll, yaw).
+   * Arduino ADC reads analog voltages from each flex sensor.
+3. **Raw Data Conversion & Mapping**:
+   * Convert MPU6050 outputs from radians to degrees.
+   * Map orientation values (e.g. –90…+90°) into the servo’s 0–180° range.
+   * Map each flex‑sensor reading (e.g. 0–1023 ADC) into a corresponding servo angle using the calibrated thresholds.
+4. **Mode Selection**:
+   * A hardware "MODE" button on the glove toggles between mapping schemes (e.g. orientation‑only, flex‑only, combined control).
+   * Debounce the button and update an internal mode flag.
+5. **Command Formatting & Wireless Transmission**:
+   * For the current mode, package the six target angles into a comma‑delimited ASCII string:
+   ```matlab
+   angle₁,angle₂,angle₃,angle₄,angle₅,angle₆
+   ```
+   * Send the string via ESP‑NOW (or Bluetooth/serial) from the glove’s ESP32 to the arm’s ESP32.
+6. **Reception & Actuation**:
+   * The robotic‑arm ESP32 listens for incoming ESP‑NOW packets (or Bluetooth serial frames).
+   * Upon receipt, parse the comma‑delimited string into six integer angles.
+   * Write each angle to its corresponding servo driver, moving the joints to replicate the glove posture.
+7. **Feedback Display & Loop**:
+   * On the glove's OLED, show the current mode and real‑time servo‑angle values.
+   * On the arm or a PC GUI, display live status or use LEDs to confirm successful command execution.
+   * Loop back to Step 2 continuously for real‑time control.
