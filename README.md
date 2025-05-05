@@ -87,3 +87,8 @@ This setup achieves real-time mapping of human hand gestures to robotic motion, 
 3. Open Firmware:
    - Launch Arduino IDE and open `firmware/Robotic_Glove.ino` and `firmware/Robotic_Arm.ino` respectively.
    - Select the appropriate board, port and upload.
+4. Configure WiFi/ESP‑NOW credentials in both sketches if needed and upload to respective ESP32 boards.
+5. Power On & Test:
+   - Provide 5–7V to servos via external power supply.
+   - Connect glove and arm Arduinos via USB or Bluetooth module.
+   - Wear the glove and starting giving hand gestures.
