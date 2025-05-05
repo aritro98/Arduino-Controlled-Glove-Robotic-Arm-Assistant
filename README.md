@@ -109,3 +109,10 @@ Upon testing, the robotic arm assistant successfully mirrored glove gestures wit
 - **User Trial**: Single‑arm user achieved task completion (pick-and-place) times comparable to two‑handed operation after brief training.
 
 These results demonstrate a reliable, low‑lag mapping from human hand to robotic manipulator—suitable for prototyping and educational use.
+
+## Future Scope
+- **Haptic Feedback**: Integrate vibration motors or force sensors in the glove to provide tactile feedback for grip strength and object contact.
+- **Machine‑Learning Calibration**: Use adaptive ML algorithms to automatically calibrate sensor‑to‑servo mappings for individualized hand anatomies.
+- **Extended DOF**: Incorporate additional sensors (e.g. IMU on wrist) to control gripper rotation and arm base swivels.
+- **Industrial Applications**: Adapt design for pick‑and‑place tasks, assembly line assistance, or tele‑operation in hazardous environments.
+- **Clinical Evaluation**: Conduct comprehensive user studies in rehabilitation settings to quantify improvements in independence and quality of life.
