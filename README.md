@@ -72,3 +72,15 @@ This setup achieves real-time mapping of human hand gestures to robotic motion, 
 - Python 3.x (optional, for data logging scripts)
 - ESP32 board support installed
 - `ESP32Servo`, `MPU6050`, `esp_now`, `Adafruit_SSD1306` libraries
+
+## Installation & Setup
+1. Clone the repository:
+   ```
+   git clone https://github.com/aritro98/Arduino-Controlled-Glove-Robotic-Arm-Assistant.git
+   cd Arduino-Controlled-Glove-Robotic-Arm-Assistant
+   ```
+2. Hardware Assembly:
+   - 3D print or assemble parts based on the provided Fusion360 (`.f3d`) files.
+   - Assemble servo motors, linkages, and mount on the base.
+   - Connect flex sensors to the glove's Arduino (analog pins A0–A4).
+   - Follow the schematic in `hardware/schematics/circuit_diagram.png`.
