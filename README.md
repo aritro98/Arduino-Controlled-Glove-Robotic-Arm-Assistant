@@ -84,3 +84,6 @@ This setup achieves real-time mapping of human hand gestures to robotic motion, 
    - Assemble servo motors, linkages, and mount on the base.
    - Connect flex sensors to the glove's Arduino (analog pins A0–A4).
    - Follow the schematic in `hardware/schematics/circuit_diagram.png`.
+3. Open Firmware:
+   - Launch Arduino IDE and open `firmware/Robotic_Glove.ino` and `firmware/Robotic_Arm.ino` respectively.
+   - Select Arduino Uno board and COM port and upload.
