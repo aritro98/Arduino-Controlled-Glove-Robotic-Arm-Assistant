@@ -56,3 +56,12 @@ This setup achieves real-time mapping of human hand gestures to robotic motion, 
    * On the glove's OLED, show the current mode and real‑time servo‑angle values.
    * On the arm or a PC GUI, display live status or use LEDs to confirm successful command execution.
    * Loop back to Step 2 continuously for real‑time control.
+
+## Hardware Requirements
+- Arduino Uno and Nano (x1 each)
+- Flex Sensor (10kΩ) (x5)
+- ESP32 Dev Kits (×2)
+- MPU6050 IMU module
+- 6 × SG90 or similar micro servos
+- SSD1306 OLED display (optional)
+- Jumper wires, breadboard, and power supply
