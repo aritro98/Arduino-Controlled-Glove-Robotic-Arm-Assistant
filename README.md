@@ -65,3 +65,10 @@ This setup achieves real-time mapping of human hand gestures to robotic motion, 
 - 6 × SG90 or similar micro servos
 - SSD1306 OLED display (optional)
 - Jumper wires, breadboard, and power supply
+
+## Software Requirements
+- Arduino IDE (v1.8.x or higher)
+- Fusion 360 (for `.f3d` files)
+- Python 3.x (optional, for data logging scripts)
+- ESP32 board support installed
+- `ESP32Servo`, `MPU6050`, `esp_now`, `Adafruit_SSD1306` libraries
