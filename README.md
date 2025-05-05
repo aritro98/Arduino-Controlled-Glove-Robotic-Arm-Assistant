@@ -86,4 +86,4 @@ This setup achieves real-time mapping of human hand gestures to robotic motion, 
    - Follow the schematic in `hardware/schematics/circuit_diagram.png`.
 3. Open Firmware:
    - Launch Arduino IDE and open `firmware/Robotic_Glove.ino` and `firmware/Robotic_Arm.ino` respectively.
-   - Select Arduino Uno board and COM port and upload.
+   - Select the appropriate board, port and upload.
