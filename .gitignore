@@ -1,0 +1,34 @@
+# Build outputs and intermediate files
+*.elf
+*.hex
+*.o
+*.map
+*.bin
+*.eep
+
+# Arduino cache and build folders
+.build/
+.pio/
+
+# Arduino libraries downloaded by PlatformIO
+.libdeps/
+
+# User-specific IDE settings
+.vscode/
+.idea/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary and backup files
+*~
+*.tmp
+*.temp
+*.log
+*.swp
+
+# Compressed archives
+*.zip
+*.rar
