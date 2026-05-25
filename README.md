@@ -1,5 +1,7 @@
 # Arduino Controlled Glove Robotic Arm Assistant
 
+https://github.com/user-attachments/assets/009d758e-78f8-4f59-bafe-9a5ba8837473
+
 A six-axis robotic arm controlled by hand gestures using an Arduino-based sensor glove and ESP‑NOW wireless protocol. Designed to empower individuals with limited mobility by enabling one‑arm operation to manipulate objects with precision.
 
 ## About the Project
